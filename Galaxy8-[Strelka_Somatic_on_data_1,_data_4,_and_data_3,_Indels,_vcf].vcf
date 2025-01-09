@@ -1,0 +1,87 @@
+##fileformat=VCFv4.1
+##fileDate=20250108
+##source=strelka
+##source_version=2.9.10
+##startTime=Wed Jan  8 15:46:42 2025
+##cmdline=/usr/local/tools/_conda/envs/mulled-v1-4000923861971bfe10cea10bed0b40997e7acf5a184011353d70409b05a7772c/bin/configureStrelkaSomaticWorkflow.py --normalBam ./input_normal.bam --tumorBam ./input_tumor.bam --config=/data/jwd02f/main/077/616/77616838/configs/tmpq5p6dmuv --referenceFasta input_ref.fasta --runDir results
+##reference=file:///data/jwd02f/main/077/616/77616838/working/input_ref.fasta
+##contig=<ID=chr1,length=248387328>
+##contig=<ID=chr2,length=242696752>
+##contig=<ID=chr3,length=201105948>
+##contig=<ID=chr4,length=193574945>
+##contig=<ID=chr5,length=182045439>
+##contig=<ID=chr6,length=172126628>
+##contig=<ID=chr7,length=160567428>
+##contig=<ID=chrX,length=154259566>
+##contig=<ID=chr9,length=150617247>
+##contig=<ID=chr8,length=146259331>
+##contig=<ID=chr11,length=135127769>
+##contig=<ID=chr10,length=134758134>
+##contig=<ID=chr12,length=133324548>
+##contig=<ID=chr13,length=113566686>
+##contig=<ID=chr14,length=101161492>
+##contig=<ID=chr15,length=99753195>
+##contig=<ID=chr16,length=96330374>
+##contig=<ID=chr17,length=84276897>
+##contig=<ID=chr18,length=80542538>
+##contig=<ID=chr20,length=66210255>
+##contig=<ID=chrY,length=62460029>
+##contig=<ID=chr19,length=61707364>
+##contig=<ID=chr22,length=51324926>
+##contig=<ID=chr21,length=45090682>
+##contig=<ID=chrM,length=16569>
+##content=strelka somatic indel calls
+##priorSomaticIndelRate=1e-06
+##INFO=<ID=QSI,Number=1,Type=Integer,Description="Quality score for any somatic variant, ie. for the ALT haplotype to be present at a significantly different frequency in the tumor and normal">
+##INFO=<ID=TQSI,Number=1,Type=Integer,Description="Data tier used to compute QSI">
+##INFO=<ID=NT,Number=1,Type=String,Description="Genotype of the normal in all data tiers, as used to classify somatic variants. One of {ref,het,hom,conflict}.">
+##INFO=<ID=QSI_NT,Number=1,Type=Integer,Description="Quality score reflecting the joint probability of a somatic variant and NT">
+##INFO=<ID=TQSI_NT,Number=1,Type=Integer,Description="Data tier used to compute QSI_NT">
+##INFO=<ID=SGT,Number=1,Type=String,Description="Most likely somatic genotype excluding normal noise states">
+##INFO=<ID=RU,Number=1,Type=String,Description="Smallest repeating sequence unit in inserted or deleted sequence">
+##INFO=<ID=RC,Number=1,Type=Integer,Description="Number of times RU repeats in the reference allele">
+##INFO=<ID=IC,Number=1,Type=Integer,Description="Number of times RU repeats in the indel allele">
+##INFO=<ID=IHP,Number=1,Type=Integer,Description="Largest reference interrupted homopolymer length intersecting with the indel">
+##INFO=<ID=MQ,Number=1,Type=Float,Description="RMS Mapping Quality">
+##INFO=<ID=MQ0,Number=1,Type=Integer,Description="Total Mapping Quality Zero Reads">
+##INFO=<ID=SOMATIC,Number=0,Type=Flag,Description="Somatic mutation">
+##INFO=<ID=OVERLAP,Number=0,Type=Flag,Description="Somatic indel possibly overlaps a second indel.">
+##INFO=<ID=SomaticEVS,Number=1,Type=Float,Description="Somatic Empirical Variant Score (EVS) expressing the phred-scaled probability of the call being a false positive observation.">
+##FORMAT=<ID=DP,Number=1,Type=Integer,Description="Read depth for tier1">
+##FORMAT=<ID=DP2,Number=1,Type=Integer,Description="Read depth for tier2">
+##FORMAT=<ID=TAR,Number=2,Type=Integer,Description="Reads strongly supporting alternate allele for tiers 1,2">
+##FORMAT=<ID=TIR,Number=2,Type=Integer,Description="Reads strongly supporting indel allele for tiers 1,2">
+##FORMAT=<ID=TOR,Number=2,Type=Integer,Description="Other reads (weak support or insufficient indel breakpoint overlap) for tiers 1,2">
+##FORMAT=<ID=DP50,Number=1,Type=Float,Description="Average tier1 read depth within 50 bases">
+##FORMAT=<ID=FDP50,Number=1,Type=Float,Description="Average tier1 number of basecalls filtered from original read depth within 50 bases">
+##FORMAT=<ID=SUBDP50,Number=1,Type=Float,Description="Average number of reads below tier1 mapping quality threshold aligned across sites within 50 bases">
+##FORMAT=<ID=BCN50,Number=1,Type=Float,Description="Fraction of filtered reads within 50 bases of the indel.">
+##FILTER=<ID=LowEVS,Description="Somatic Empirical Variant Score (SomaticEVS) is below threshold">
+##FILTER=<ID=LowDepth,Description="Tumor or normal sample read depth at this locus is below 2">
+##FILTER=<ID=HighDepth,Description="Locus depth is greater than 3x the mean chromosome depth in the normal sample">
+##Depth_chr1=2.00
+##Depth_chr10=2.00
+##Depth_chr11=2.00
+##Depth_chr12=2.00
+##Depth_chr13=1.00
+##Depth_chr14=2.00
+##Depth_chr15=2.00
+##Depth_chr16=2.00
+##Depth_chr17=2.00
+##Depth_chr18=2.00
+##Depth_chr19=2.00
+##Depth_chr2=2.00
+##Depth_chr20=2.00
+##Depth_chr21=2.00
+##Depth_chr22=2.00
+##Depth_chr3=2.00
+##Depth_chr4=2.00
+##Depth_chr5=2.00
+##Depth_chr6=2.00
+##Depth_chr7=2.00
+##Depth_chr8=2.00
+##Depth_chr9=2.00
+##Depth_chrM=2.00
+##Depth_chrX=2.00
+##Depth_chrY=1.00
+#CHROM	POS	ID	REF	ALT	QUAL	FILTER	INFO	FORMAT	NORMAL	TUMOR
