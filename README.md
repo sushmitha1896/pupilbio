@@ -31,7 +31,7 @@ Integrative genome viewer
 The results of the analysis, including quality control reports, alignment summaries, variant summaries, and visualizations, can be found here.
 
 ********Conclusion********
-This project demonstrates my ability to perform comprehensive bioinformatics analyses, from raw data processing to variant identification and visualization. Thank you for considering my application for the bioinformatics position at PupilBio.
+This project demonstrates my ability to perform comprehensive bioinformatics analyses, from raw data processing to variant identification and visualization. Thank you for considering my application for the bioinformatics position.
 
 *********Contact******
-For any questions or further information, please feel free to reach out to me at sushmi180496@gmail.com
+For any questions or further information, please feel free to reach out to me at sushmi18041996@gmail.com / sushmi180496@gmail.com
