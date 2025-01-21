@@ -1,6 +1,6 @@
-******Bioinformatics Assignment for PupilBio Selection*****
+******Bioinformatics Assignment for Selection*****
 
-Welcome to my bioinformatics assignment submission for the selection process at PupilBio. This project demonstrates my skills and expertise in bioinformatics, including data analysis, variant calling, and genomic visualization.
+Welcome to my bioinformatics assignment submission for the selection process. This project demonstrates my skills and expertise in bioinformatics, including data analysis, variant calling, and genomic visualization.
 
 *********Project Overview************
 This assignment involves analyzing genomic data to identify somatic mutations and perform various downstream analysis. The primary steps include:
